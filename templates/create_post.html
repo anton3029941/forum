@@ -10,17 +10,25 @@
                 flex-direction: column;
                 gap: 5px;
             }
+            .content {
+                width: 350px;
+                height: 200px;
+                vertical-align: top;
+                text-align: left;
+                padding: 8px 12px;
+                box-sizing: border-box;
+            }
         </style>
     </head>
     <body>
         <a href="./homepage.html">
             <button type="button">Home</button>
         </a>
-        <form action="/publish" class="post">
+        <form action="/create" class="post">
             <label for="title">Title</label>
             <input id="title" name="title" style="width: 300px;">
             <label for="content">Content</label>
-            <input id="content" name="content" style="width: 350px; height: 200px;">
+            <textarea id="content" name="content" class="content"></textarea>
             <button type="submit" style="width: 150px; height: 30px;">Publish</button>
         </form>
     </body>
