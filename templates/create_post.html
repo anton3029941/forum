@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Post</title>
+        <style>
+            .post {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="./homepage.html">
+            <button type="button">Home</button>
+        </a>
+        <form action="/publish" class="post">
+            <label for="title">Title</label>
+            <input id="title" name="title" style="width: 300px;">
+            <label for="content">Content</label>
+            <input id="content" name="content" style="width: 350px; height: 200px;">
+            <button type="submit" style="width: 150px; height: 30px;">Publish</button>
+        </form>
+    </body>
+</html>
